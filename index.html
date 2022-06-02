@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/Iconos/ico-removebg-preview.ico">
+    <title>Figuras Geometricas | Platzi</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./celFiguras.css" media="(max-width:500px)">
+</head>
+<body>
+    
+   <header>
+       <h1>Calculadora geometrica | Practica de Platzi.</h1>
+
+        <h3>Pagina realizada en modo de practica con HTML, CSS y JS.</h3>
+        <div class="listaPag">
+            <a href="./descuentos.html"><p>Porcentajes</p></a>
+            <a href="./moda.html"><p>Moda/Prom/Med</p></a>
+            <a href="./contabilidad.html">Gestion de gastos</a>
+        </div>
+    </header>
+<div>
+    <section>
+        <!-- /*cuadrado*/  -->
+        <form class="cuadrado">
+            <label for="ladoCuadrado">
+               </label>
+            <div class="subTitCuadrado">
+                <div>
+            <h4>Calculadora de cuadrados:</h4>
+            <p>Escribe cuanto miden 1 lado del cuadrado:</p>
+            </div>
+            <picture>
+                <img src="./Assets/Iconos/cuadrado-removebg-preview-removebg-preview.png" alt="">
+            </picture>
+            </div>
+            <input type="number" id="ladoCuadrado" placeholder="Lado del cuadrado">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Perimetro del cuadrado.
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+              Area del cuadrado.
+            </button>
+        </form>
+
+        <!-- /*trinagulo*/ -->
+        <form class="triangulo">
+                <div class="subTitTriangulo">
+                <div>
+                <h4>Calculadora de triangulos:</h4>
+                <p>Escribe las medidas: lado, altura, base:</p>
+                </div>
+                <picture>
+                    <img src="./Assets/Iconos/Triangulo-removebg-preview.png" alt="">
+                </picture>
+                </div>
+
+             <label for="ladoTriangulo"></label>
+            <input type="number" placeholder="Lado..." id="ladoTriangulo">
+
+            <label for="alturaTriangulo"></label>
+            <input type="number" placeholder="Altura..." id="alturaTriangulo">
+
+            <label for="baseTriangulo"></label>
+            <input type="number" placeholder="Base..." id="baseTriangulo">
+
+            <button type="button" onclick="perTriangulo()">
+                Perimetro del triangulo
+            </button>
+
+            <button type="button" onclick="arTriangulo()">
+                Area del triangulo
+            </button>
+            </form>
+
+
+            <!-- /*circulo*/ -->
+            <form class="circulo">
+                <div class="subTitCirculo">
+                <div>
+                <h4>Calculadora de circulos:</h4>
+                <p>Escribe el radio del circulo:</p>
+                </div>
+                <picture>
+                    <img src="./Assets/Iconos/circulo-removebg-preview.png" alt="">
+                </picture>
+                </div>
+                <label for="radio"></label>
+                <input type="number" placeholder="Radio..." id="radio">
+
+            <button type="button" onclick="diaCirculo()">
+                Diametro del circulo
+            </button>    
+
+            <button type="button" onclick="perCirculo()">
+                Perimetro del circulo
+            </button>
+
+            <button type="button" onclick="arCirculo()">
+                Area del circulo
+            </button>
+            </form>
+        
+    </section>
+</div>
+    <script src="./Figuras.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/Iconos/Descuento.png">
+    <title>Moda | Promedio | Mediana</title>
+    <link rel="stylesheet" href="./moda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./modaCel.css" media="(max-width:500px)">
+    
+</head>
+<body>
+    <header>
+    <h1>Moda | Promedio | Mediana | Platzi.</h1>
+    <h3>Pagina realizada en modo de practica con HTML, CSS y JS.</h3>
+    <div class="listaPag">
+        <a href="./descuentos.html"><p>Porcentajes</p></a>
+        <a href="./index.html"><p>Geometria</p></a>
+        <a href="./contabilidad.html">Gestion de gastos</a>
+    </div>
+    </header>
+
+    <section>
+    
+<form action="" class="moda">
+    <label for="moda"></label>
+    <h3>Moda:</h3>
+    <input type="text" id="moda" placeholder="Ej: 40 50 40 sin comas">
+    <p>Total moda:</p>
+    <p id="resultadoModa" class="resultados"></p>
+    <button type="button" onclick="calculosModa()">Calcular</button>
+    
+</form>
+
+
+<form action="" class="promedio">
+    <label for="promedio"></label>
+    <h3>Promedio:</h3>
+    <input type="text" id="promedio" placeholder="Ej: 40 50 40 sin comas">
+    <p>Total promedio:</p>
+    <p id="resultadoProm" class="resultados"></p>
+    <button type="button" onclick="calculosProm()">Calcular</button>
+</form>
+
+
+<form action="" class="mediana">
+    <label for="mediana"></label>
+    <h3>Mediana:</h3>
+    <input type="text" id="mediana" placeholder="Ej: 10 30 20 sin comas">
+    <p>Total mediana:</p>
+    <p id="resultadoMediana" class="resultados"></p>
+    <button type="button" onclick="calculosMediana()">Calcular</button>
+</form>
+
+</section>
+
+    <script src="./moda.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./Promedio.js"></script>
+
+</body>
+</html>

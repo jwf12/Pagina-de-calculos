@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/Iconos/png-transparent-expense-management-appbrain-deloitte-luxembourg-expense-grass-revenue-money-removebg.ico">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./contabilidad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./contcel.css" media="(max-width:500px)">
+</head>
+<body>
+    <div class="principal">
+    <header>
+        <h1>Calculadora de ingresos/egresos.</h1>
+        <h3>Pagina realizada en modo de practica con HTML, CSS y JS.</h3>
+        <div class="listaPag">
+            <a href="./descuentos.html"><p>Porcentajes</p></a>
+            <a href="./moda.html"><p>Moda/Prom/Med</p></a>
+            <a href="./index.html">Geometria</a>
+        </div>
+    </header>
+    <section>
+    <div class="presentacion">
+        <h2>Proyecto final:</h2>
+        <p> Este proyecto forma parte del curso practico de JS de Platzi, realizado con los conocimientos adquiridos en el mismo</p>
+    </div>
+    <form action="" class="formIngresos">
+        <div class="izq">
+        <label for="ingreso"></label>
+        <h3>Ingresos</h3>
+        <p>Monto:</p>
+        <input type="number" id="ingreso" >
+        <p>Motivo:</p>
+        <input type="text" id="motivoIngreso">
+        <button type="button" onclick="ingresosSuma()">Calcular</button>
+        </div>
+
+        <div>
+        <label for="egreso"></label>
+        <h3>Egresos</h3>
+        <p>Monto:</p>
+        <input type="number" id="egreso" >
+        <p>Motivo:</p>
+        <input type="text" id="motivoEgreso">
+        <button type="button" onclick="egresoSuma()">Calcular</button>
+        </div>
+    </form>
+    <div class="motivos">
+    <p id="ingresosTexto" class="ingresosTexto"></p>
+    <p id="egresosTexto" class="egresosTexto"></p>
+    </div>
+    <div class="saldos">
+        <p id="saldoIngreso" class="ingresos"></p>
+        <p id="saldoEgreso" class="egresos"></p>
+        <p id="saldo" class="saldo"></p>
+    </div>
+    </section>
+</div>
+
+    <script src="./contabilidad.js"></script>
+</body>
+</html>

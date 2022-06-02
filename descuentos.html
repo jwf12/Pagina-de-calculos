@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/Iconos/Descuento.png">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./descuento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./descCel.css" media="(max-width:500px)">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de porcentajes | Curso de Platzi.</h1>
+        <h3>Pagina realizada en modo de practica con HTML, CSS y JS.</h3>
+        <div class="listaPag">
+            <a href="./index.html"><p>Geometria</p></a>
+            <a href="./moda.html"><p>Moda/Prom/Med</p></a>
+            <a href="./contabilidad.html">Gestion de gastos</a>
+        </div>
+    </header>
+
+    <section>
+
+        <form>
+            <div class="titH3">
+            <h3>Calculadora de descuentos</h3>
+            <picture><img src="./Assets/Iconos/Descuento.png" alt=""></picture>
+            </div>
+            <div class="divDescuento">
+            <label for="precioProducto"> Colocar el precio: </label>
+            <input type="number" id="precioProducto" placeholder="Colocar el precio..." oninput="descuentoProducto()">
+            <label for="descuentoPro"> Colocar el descuento: </label>
+            <input type="number" id="descuentoPro" placeholder="Colocar descuento sin %" oninput="descuentoProducto()">           
+            <p>Total</p>
+            <p id="resultadoDescuento" class="totales"></p>
+            </div>
+
+            <div class="divCupon">
+            <label for="cuponDescuento"> Coloca tu cupon:</label>
+            <input type="text" placeholder="Cupon..." id="cuponDescuento" >
+            <button type="button" onclick="descuentoCupon()">Descuento con cupon</button>
+            <p>Precio Con descuento!</p>
+            <p id="resultadoCupon" class="totales"></p>
+            </div>
+        </form>
+
+    </section>
+        <aside class="cuponesAside">
+            <h3>Cupones:</h3>
+            <p>
+            - Julo%10
+            <br>
+            - K%20
+            <br>
+            - JK%30
+            </p>
+        </aside>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+margin: 0 auto;
+
+}
+.presentacion{
+    top: 120px;
+}
+form{
+    flex-direction: column;
+    width: 400px;
+    top: 100px;
+}
+form button{
+    width: 60%;
+}
+.motivos{
+    top: 110px;
+}
+.saldos{
+    top: 120px;
+}
+section{
+    flex-direction: column;
+}
+
+form{
+    width: 80%;
+    margin: 30px auto;
+}
+form .izq{
+    margin-right: 0px;
+}
+.motivos{
+    width: 90%;
+}

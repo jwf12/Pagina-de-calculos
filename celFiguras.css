@@ -1,0 +1,9 @@
+    section{
+        flex-direction: column;
+    }
+
+    form{
+        width: 80%;
+        margin: 30px auto;
+    }
+
