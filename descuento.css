@@ -109,21 +109,6 @@ form p{
     flex-direction: column;
 }
 
-.cuponesAside{
-    text-align: start;
-    font-weight: 900;
-    position: absolute;
-    padding: 5px;
-    bottom: 370px;
-    left: 340px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px 4px rgb(100 41 41 / 38%);
-    backdrop-filter: blur(10px);
-    background-color: rgb(218 114 128 / 27%);
-}
-.cuponesAside h3{
-text-decoration: underline;
-}
 .listaPag{
     display: flex;
     width: 100%;
