@@ -30,7 +30,7 @@
     <label for="moda"></label>
     <h3>Moda:</h3>
     <input type="text" id="moda" placeholder="Ej: 40 50 40 sin comas">
-    <p>Total moda:</p>
+    <p>Total moda:(numero,cantidad)</p>
     <p id="resultadoModa" class="resultados"></p>
     <button type="button" onclick="calculosModa()">Calcular</button>
     
@@ -40,7 +40,7 @@
 <form action="" class="promedio">
     <label for="promedio"></label>
     <h3>Promedio:</h3>
-    <input type="text" id="promedio" placeholder="Ej: 40 50 40 sin comas">
+    <input type="text" id="promedio" placeholder="Ej: 40 50 40 sin comas" required>
     <p>Total promedio:</p>
     <p id="resultadoProm" class="resultados"></p>
     <button type="button" onclick="calculosProm()">Calcular</button>
@@ -56,8 +56,13 @@
     <button type="button" onclick="calculosMediana()">Calcular</button>
 </form>
 
-</section>
 
+</section>
+<footer>
+    By Julian Ward 💻
+  </footer>
+
+  
     <script src="./moda.js"></script>
     <script src="./mediana.js"></script>
     <script src="./Promedio.js"></script>

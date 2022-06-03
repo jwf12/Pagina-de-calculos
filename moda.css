@@ -99,3 +99,17 @@ a{
 a p{
     margin-right: 10px;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    text-align: center;
+    background: rgba(238, 221, 128, 0.25);
+    box-shadow: 0 8px 15px 1px rgba(167, 144, 40, 0.25);
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}

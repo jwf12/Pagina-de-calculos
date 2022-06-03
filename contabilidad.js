@@ -1,8 +1,6 @@
 // Lista de ingresos, vacia...
 const LISTA_INGRESOS = [];
    
-
-
 //Interacion donde se crea una variable, a la que se le suma
 // todos lo ingresos, de la lista vacia.
 function sumaIngresos(lista){
@@ -12,11 +10,10 @@ for (let i = 0; i < lista.length; i++){
 }
 return listaIngresosLista;
 }
-function mostrarObjeto (lista){
-    for (let i = 0; i < lista.length; i++){
-        return  lista[i];
-    }
-}
+
+
+
+
 
 
 
@@ -41,7 +38,14 @@ let LISTA_MONTO2 = LISTA_EGRESOS.map(
         return dinero.monto;
     }
 );
-    INGRESOS_TEXTO2.innerText = "Ingresos: " + JSON.stringify(LISTA_INGRESOS);
+let motivo1 = LISTA_INGRESOS.map(
+    function (porque){
+        return porque.motivo;
+    }
+);
+
+
+    INGRESOS_TEXTO2.innerText = "Ingresos: " + "$" + LISTA_MONTO1 + " " +"Motivo: " + motivo1;
     INGRESOS.innerText = "Ingresos: "+ "$" + INPUT1;
     console.log (LISTA_INGRESOS);
     console.log("Total" + " " + sumaIngresos(LISTA_MONTO1));
@@ -99,7 +103,12 @@ let LISTA_MONTO2 = LISTA_EGRESOS.map(
     }
 );
 
-    INGRESOS_TEXTO.innerText = "Egresos: " + JSON.stringify(LISTA_EGRESOS);
+let motivo2 = LISTA_EGRESOS.map(
+    function (porque){
+        return porque.motivo;
+    }
+);
+    INGRESOS_TEXTO.innerText = "Egresos: " + "$" + LISTA_MONTO2 + " " +"Motivo: " + motivo2;
     console.log ("-" + INPUT + " " + INPUT2);
     EGRESOS.innerText = "Egresos: " + "$" + INPUT;
     TOTAL.innerText =("Tu saldo" + " " + "$" + saldoTotal(sumaIngresos(LISTA_MONTO),restaIngresos(LISTA_MONTO2))); 
